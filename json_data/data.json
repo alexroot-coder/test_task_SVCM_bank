@@ -1,0 +1,325 @@
+{
+	"fields": [
+		{
+			"id": 820,
+			"type": "multiple_choice",
+			"name": "Работаю удаленно",
+			"value": {
+				"choice_id": 2,
+				"choice_ids": [
+					2
+				],
+				"choice_names": [
+					"Нет"
+				]
+			}
+		},
+		{
+			"id": 985,
+			"type": "multiple_choice",
+			"name": "Тип запроса (СК)"
+		},
+		{
+			"id": 1044,
+			"type": "title",
+			"name": "Для заполнения администраторами",
+			"value": {
+				"checkmark": "unchecked",
+				"fields": [
+					{
+						"id": 1042,
+						"type": "multiple_choice",
+						"name": "Группа сопровождения (СК)",
+						"parent_id": 1044,
+						"value": {
+							"choice_id": 1,
+							"choice_ids": [
+								1
+							],
+							"choice_names": [
+								"Администраторы "
+							]
+						}
+					},
+					{
+						"id": 1069,
+						"type": "multiple_choice",
+						"name": "Подключение регионального ОТС",
+						"parent_id": 1044,
+						"value": {
+							"choice_id": 1,
+							"choice_ids": [
+								1
+							],
+							"choice_names": [
+								"Да"
+							]
+						}
+					},
+					{
+						"id": 1043,
+						"type": "text",
+						"name": "Номер задачи в Jira",
+						"parent_id": 1044
+					}
+				]
+			}
+		},
+		{
+			"id": 18,
+			"type": "multiple_choice",
+			"name": "Тип запроса",
+			"value": {
+				"choice_id": 1,
+				"choice_ids": [
+					1
+				],
+				"choice_names": [
+					"У меня не работает"
+				],
+				"fields": [
+					{
+						"id": 27,
+						"type": "multiple_choice",
+						"name": "Не работает",
+						"parent_id": 18,
+						"value": {
+							"choice_id": 1,
+							"choice_ids": [
+								1
+							],
+							"choice_names": [
+								"Программа\\Веб-ресурс"
+							],
+							"fields": [
+								{
+									"id": 28,
+									"type": "multiple_choice",
+									"name": "Название программы",
+									"parent_id": 27,
+									"value": {
+										"choice_id": 93,
+										"choice_ids": [
+											93
+										],
+										"choice_names": [
+											"Пайрус (Pyrus)"
+										],
+										"fields": [
+											{
+												"id": 1024,
+												"type": "multiple_choice",
+												"name": "Выбор типа проблемы",
+												"parent_id": 28,
+												"value": {
+													"choice_id": 2,
+													"choice_ids": [
+														2
+													],
+													"choice_names": [
+														"Ошибка в работе формы/проекта"
+													]
+												}
+											}
+										]
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 1104,
+			"type": "multiple_choice",
+			"name": "Подтип запроса (Cовкомбанк Бизнес (бывш. ЧАТ-БАНК))"
+		},
+		{
+			"id": 1129,
+			"type": "title",
+			"name": "Перенос РБС ID между аккаунтами",
+			"value": {
+				"checkmark": "unchecked",
+				"fields": [
+					{
+						"id": 1130,
+						"type": "text",
+						"name": "UID аккаунта откуда перенести",
+						"parent_id": 1129
+					},
+					{
+						"id": 1135,
+						"type": "file",
+						"name": "Скриншот ошибки при самостоятельном добавлении",
+						"parent_id": 1129
+					}
+				]
+			}
+		},
+		{
+			"id": 1088,
+			"type": "text",
+			"name": "Номер задачи по форме 2.0 на предоставление доступа в Cisco Webex Meeting"
+		},
+		{
+			"id": 643,
+			"type": "catalog",
+			"name": "Приоритет",
+			"value": {
+				"item_id": 78123222,
+				"item_ids": [
+					78123222
+				],
+				"headers": [
+					"Приоритеты_ДБТ"
+				],
+				"values": [
+					"Высокий"
+				],
+				"rows": [
+					[
+						"Высокий"
+					]
+				]
+			}
+		},
+		{
+			"id": 1037,
+			"type": "multiple_choice",
+			"name": "Тип обращения (Instinct)"
+		},
+		{
+			"id": 210,
+			"type": "file",
+			"name": "Приложите скриншот или файл",
+			"value": [
+				{
+					"id": 131966481,
+					"name": "перезапрос согласовна.docx",
+					"size": 191724,
+					"version": 1,
+					"md5": "63564B7E2FCDA9CEE76D1846C114C8D8",
+					"url": "https://pyrus.com/services/attachment?id=131966481"
+				}
+			]
+		},
+		{
+			"id": 1223,
+			"type": "title",
+			"name": "Для заполнения администраторами",
+			"value": {
+				"checkmark": "unchecked",
+				"fields": [
+					{
+						"id": 1226,
+						"type": "multiple_choice",
+						"name": "Группа сопровождения (СК)",
+						"parent_id": 1223,
+						"value": {
+							"choice_id": 1,
+							"choice_ids": [
+								1
+							],
+							"choice_names": [
+								"Администраторы "
+							]
+						}
+					},
+					{
+						"id": 1225,
+						"type": "text",
+						"name": "Номер задачи в Jira",
+						"parent_id": 1223
+					}
+				]
+			}
+		},
+		{
+			"id": 799,
+			"type": "title",
+			"name": "Заполняет сотрудник ДПиТ / ДИТ",
+			"value": {
+				"checkmark": "unchecked",
+				"fields": [
+					{
+						"id": 800,
+						"type": "multiple_choice",
+						"name": "Задействованные системы",
+						"parent_id": 799
+					}
+				]
+			}
+		},
+		{
+			"id": 965,
+			"type": "person",
+			"name": "Добавить рук-ля сотрудника в согласующие"
+		},
+		{
+			"id": 966,
+			"type": "multiple_choice",
+			"name": "Добавить ИТ Контроль в согласующие",
+			"value": {
+				"choice_id": 2,
+				"choice_ids": [
+					2
+				],
+				"choice_names": [
+					"Нет"
+				]
+			}
+		},
+		{
+			"id": 38,
+			"type": "title",
+			"name": "Обработка задачи",
+			"value": {
+				"checkmark": "unchecked",
+				"fields": [
+					{
+						"id": 716,
+						"type": "multiple_choice",
+						"name": "Группа исполнителей (ОСПТ, ОСПиОПО или ОРСС_ДБО)",
+						"parent_id": 38,
+						"value": {
+							"choice_id": 1,
+							"choice_ids": [
+								1
+							],
+							"choice_names": [
+								"ОСПТ"
+							]
+						}
+					},
+					{
+						"id": 1056,
+						"type": "multiple_choice",
+						"name": "Группа исполнителей ЧАТ-БАНК",
+						"parent_id": 38,
+						"value": {
+							"choice_id": 2,
+							"choice_ids": [
+								2
+							],
+							"choice_names": [
+								"ОСПТ_Chat-Bank"
+							]
+						}
+					},
+					{
+						"id": 852,
+						"type": "text",
+						"name": "Сообщите, что именно Вас не устроило",
+						"parent_id": 38
+					}
+				]
+			}
+		},
+		{
+			"id": 1039,
+			"type": "due_date_time",
+			"name": "Срок"
+		}
+	]
+}

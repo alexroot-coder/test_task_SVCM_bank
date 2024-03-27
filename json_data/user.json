@@ -1,0 +1,20 @@
+{
+    "id": 1,
+    "name": "Иван",
+    "address": [
+        {
+            "uuid": 1,
+            "type": "home",
+            "city": "Барнаул",
+            "street": "Ленина",
+            "building": "12/2"
+        },
+        {
+            "uuid": 2,
+            "type": "work",
+            "city": "Барнаул",
+            "street": "Калинина",
+            "building": "1"
+        }
+    ]
+}
