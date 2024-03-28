@@ -3,14 +3,14 @@
     "name": "Иван",
     "address": [
         {
-            "uuid": 1,
+            "id": 1,
             "type": "home",
             "city": "Барнаул",
             "street": "Ленина",
             "building": "12/2"
         },
         {
-            "uuid": 2,
+            "id": 2,
             "type": "work",
             "city": "Барнаул",
             "street": "Калинина",

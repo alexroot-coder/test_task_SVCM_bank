@@ -30,15 +30,12 @@ def update_user_address(db: Session, address_id: int, user_address, id: int):
     else:
         tmp_user = db.query(models.Address).filter(models.Address.id == address_id).first()
         if tmp_user:
-            if tmp_user.type != user_address.type:
-                tmp_user.type = user_address.type
-            if tmp_user.city != user_address.city:
-                tmp_user.city = user_address.city
-            if tmp_user.street != user_address.street:
-                tmp_user.street = user_address.street
-            if tmp_user.building != user_address.building:
-                tmp_user.building = user_address.building
-            db.add(tmp_user)
+            asd = jsonable_encoder(tmp_user)
+            address_data = user_address.dict(exclude_unset=True)
+            for key, value in address_data.items():
+                asd[key] = value
+            tmp = models.Address(**asd)
+            db.query(models.Address).filter(models.Address.id == address_id).update(jsonable_encoder(tmp))
             db.commit()
     return tmp_user
 

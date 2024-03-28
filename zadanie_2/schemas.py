@@ -1,4 +1,5 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class User(BaseModel):
@@ -27,3 +28,10 @@ class ViewUser(BaseModel):
 
 class ShowUserByID(ViewUser):
     address: list[UserAddress]
+
+
+class AddressUpdate(BaseModel):
+    type: Optional[str] = Field(None)
+    city: Optional[str] = Field(None)
+    street: Optional[str] = Field(None)
+    building: Optional[str] = Field(None)

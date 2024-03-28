@@ -9,8 +9,8 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 
-@app.patch("/users/{id}/addresses/{address_id}", response_model=schemas.UserAddAddress, tags=['Задание_2'])
-async def update_user_address(id: int = None, address_id: int = None, user_address: schemas.UserAddAddress = None,
+@app.patch("/users/{id}/addresses/{address_id}", response_model=schemas.AddressUpdate, tags=['Задание_2'])
+async def update_user_address(id: int = None, address_id: int = None, user_address: schemas.AddressUpdate = None,
                               db: Session = Depends(get_db)):
     db_user_address = crud.update_user_address(id=id, db=db, address_id=address_id, user_address=user_address)
     return db_user_address
