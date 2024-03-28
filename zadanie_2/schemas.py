@@ -7,11 +7,11 @@ class User(BaseModel):
 
 
 class UserAddress(BaseModel):
-    id: int
-    type: str
-    city: str
-    street: str
-    building: str
+    id: int | None
+    type: str | None
+    city: str | None
+    street: str | None
+    building: str | None
 
 
 class UserAddAddress(BaseModel):
