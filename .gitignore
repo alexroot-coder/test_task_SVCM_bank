@@ -1,4 +1,4 @@
 .idea
 __pycache__
 venv
-zadanie_2/sql_app.db
+zadanie_2/app/sql_app.db
